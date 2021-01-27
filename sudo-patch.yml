@@ -1,6 +1,6 @@
 ---
 - name: update sudo
-  hosts: *
+  hosts: all
 
   tasks:
   - name: update sudo
