@@ -1,0 +1,9 @@
+---
+- name: update sudo
+  hosts: *
+
+  tasks:
+  - name: update sudo
+    yum:
+      name: http://mirror.centos.org/centos/7/os/x86_64/Packages/sudo-1.8.23-10.el7.x86_64.rpm
+    environment: "{{ proxy }}"
